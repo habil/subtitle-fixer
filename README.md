@@ -3,7 +3,7 @@
 You have opened a movie in the archive, but you have encountered a subtitle problem. Would you like to sync all subtitle names with videos?
 All you need to do is select the archive directory and press the run button.
 
-Download link to run the program directly: xx
+You can download jar file from release section: Click here : https://github.com/habil/subtitle-fixer/releases
 
 ### Requirements
 
