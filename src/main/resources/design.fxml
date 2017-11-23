@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="200.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bozali.habil.fixer.Controller">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="0.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="0.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="200.0" prefWidth="523.0">
+         <children>
+            <Button fx:id="selectFolderButton" alignment="CENTER_RIGHT" layoutX="16.0" layoutY="57.0" mnemonicParsing="false" onAction="#chooseAction" prefHeight="56.0" prefWidth="133.0" text="Select Folder">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect></Button>
+            <Label fx:id="seledtedFolderLabel" layoutX="16.0" layoutY="124.0" prefHeight="17.0" prefWidth="376.0" text="Selected Folder :" />
+            <ProgressBar fx:id="progressbar" layoutX="14.0" layoutY="157.0" prefHeight="18.0" prefWidth="376.0" progress="0.0" />
+            <ImageView fitHeight="56.0" fitWidth="133.0" layoutX="174.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@arrow.png" />
+               </image></ImageView>
+            <Button fx:id="runButton" alignment="CENTER" disable="true" layoutX="257.0" layoutY="57.0" mnemonicParsing="false" onAction="#runAction" prefHeight="56.0" prefWidth="133.0" text="RUN">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
